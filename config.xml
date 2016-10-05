@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="infinity.lserconsumer" version="0.8.4">
+    <name>LSER_Consumer</name>
+    <description>
+        CommonTime Infinity Client
+    </description>
+    <author email="leon.revill@commontime.com">
+        Leon Revill for Commontime Ltd
+    </author>
+    <content src="index.html"/>
+
+    <plugin name="cordova-plugin-whitelist" spec="1.2.2"/>
+    <plugin name="cordova-plugin-battery-status" spec="1.1.2"/>
+    <plugin name="cordova-plugin-media-capture" spec="1.3.0"/>
+    <plugin name="cordova-plugin-console" spec="1.0.3"/>
+    <plugin name="cordova-plugin-contacts" spec="2.1.0"/>
+    <plugin name="cordova-plugin-device" spec="1.1.2"/>
+    <plugin name="cordova-plugin-device-motion" spec="1.2.1"/>
+    <plugin name="cordova-plugin-device-orientation" spec="1.0.3"/>
+    <plugin name="cordova-plugin-dialogs" spec="1.2.1"/>
+    <plugin name="cordova-plugin-file" spec="4.2.0"/>
+    <plugin name="cordova-plugin-file-transfer" spec="1.5.1"/>
+    <plugin name="cordova-plugin-geolocation" spec="2.2.0"/>
+    <plugin name="cordova-plugin-globalization" spec="1.0.3"/>
+    <plugin name="cordova-plugin-inappbrowser" spec="1.4.0"/>
+    <plugin name="cordova-plugin-network-information" spec="1.2.1"/>
+    <plugin name="cordova-plugin-splashscreen" spec="3.2.2"/>
+    <plugin name="cordova-plugin-vibration" spec="2.1.1"/>
+    <plugin name="cordova-plugin-statusbar" spec="1.0.1"/>
+    <plugin name="cordova-plugin-file-opener2" spec="2.0.2"/>
+    <plugin name="cordova-plugin-camera" spec="2.2.0"/>
+
+    <plugin name="com.telerik.plugins.healthkit" spec="0.4.2"/>
+    <plugin name="phonegap-plugin-barcodescanner" spec="5.0.1"/>
+    <plugin name="cordova-universal-clipboard" spec="0.1.0"/>
+
+    <plugin name="com.commontime.cordova.thumbnail" spec="1.4.8"/>
+    <plugin name="com.commontime.cordova.file-opener" spec="1.0.6"/>
+    <plugin name="com.commontime.cordova.beacon" spec="1.0.4"/>
+    <plugin name="com.commontime.cordova.notification" spec="1.0.0"/>
+    <plugin name="com.commontime.cordova.audio" spec="0.9.5"/>
+    <plugin name="com.commontime.cordova.media-properties" spec="1.2.4"/>
+    <plugin name="com.commontime.cordova.splitscreen" spec="1.1.0"/>
+    <plugin name="com.commontime.cordova.preferences" spec="1.0.0"/>
+    <plugin name="com.commontime.cordova.authentication" spec="1.0.6"/>
+    <plugin name="com.commontime.cordova.urlhandler" spec="1.1.0">
+        <param name="URL_SCHEME" value="lserconsumer"/>
+    </plugin>
+    <plugin name="com.commontime.cordova.securesettings" spec="1.0.2"/>
+    <plugin spec="https://github.com/commontime/com.commontime.cordova.geofence.git"/>
+
+    <preference name="phonegap-version" value="cli-6.3.0"/>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="lightContent"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="Orientation" value="default"/>
+    <preference name="android-minSdkVersion" value="15"/>
+    <preference name="android-build-tool" value="gradle"/>
+    <preference name="Orientation" value="all"/>
+    <preference name="android-windowSoftInputMode" value="adjustPan"/>
+    <preference name="deployment-target" value="8.0"/>
+
+    <icon src="icon.png"/>
+
+    <platform name="ios">
+        <icon src="Icon-App-40x40@1x.png" width="40" height="40"/>
+        <icon src="Icon-App-40x40@2x.png" width="80" height="80"/>
+        <icon src="Icon-App-40x40@3x.png" width="120" height="120"/>
+        <icon src="57x57.png" width="57" height="57"/>
+        <icon src="114x114.png" width="114" height="114"/>
+        <icon src="Icon-App-60x60@1x.png" width="60" height="60"/>
+        <icon src="Icon-App-60x60@2x.png" width="120" height="120"/>
+        <icon src="Icon-App-60x60@3x.png" width="180" height="180"/>
+        <icon src="2x72.png" width="72" height="72"/>
+        <icon src="144x144.png" width="144" height="144"/>
+        <icon src="Icon-App-76x76@1x.png" width="76" height="76"/>
+        <icon src="Icon-App-76x76@2x.png" width="152" height="152"/>
+        <icon src="Icon-App-76x76@3x.png" width="228" height="228"/>
+        <icon src="Icon-App-29x29@1x.png" width="29" height="29"/>
+        <icon src="Icon-App-29x29@2x.png" width="58" height="58"/>
+        <icon src="Icon-App-29x29@3x.png" width="87" height="87"/>
+        <icon src="50x50.png" width="50" height="50"/>
+        <icon src="100x100.png" width="100" height="100"/>
+        <icon src="Icon-App-83.5x83.5@2x.png" width="167" height="167"/>
+        <splash src="Default-Portrait@2x.png" width="1536" height="2048"/>
+        <splash src="Default-Landscape@2x.png" width="2048" height="1536"/>
+        <splash src="Default-736h.png" width="1242" height="2208"/>
+        <splash src="Default-Landscape-736h.png" width="2208" height="1242"/>
+    </platform>
+    <platform name="android">
+        <icon src="icon-36-ldpi.png" density="ldpi"/>
+        <icon src="icon-48-mdpi.png" density="mdpi"/>
+        <icon src="icon-72-hdpi.png" density="hdpi"/>
+        <icon src="icon-96-xhdpi.png" density="xhdpi"/>
+        <icon src="icon-144-xxhdpi.png" density="xxhdpi"/>
+        <splash src="portrait-xhdpi.png" qualifier="port-xhdpi"/>
+        <splash src="landscape-xhdpi.png" qualifier="land-xhdpi"/>
+    </platform>
+
+    <access origin="*"/>
+    <allow-navigation href="*"/>
+</widget>

@@ -1,0 +1,1 @@
+// empty cordova file for desktop clients
